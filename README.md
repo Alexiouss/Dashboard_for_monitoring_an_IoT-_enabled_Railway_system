@@ -21,4 +21,5 @@ After you create your database the database name should be 'Railway' and the col
   6. environment_system
   7. environmental_data
 
-After creating the database you are good to go by running the server.js file.
+After creating the database you are good to go by running the server.js file. The server runs on the localhost at the port 8080
+Finally, to see the results of the decion tree and to have a better understanding of the algorithm, you can visualize the tree by passing the file tree_structure.dot to the site http://www.webgraphviz.com.
