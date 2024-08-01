@@ -1,0 +1,8 @@
+path: ../dataset
+train: ../train/images
+val: ../valid/images
+
+names:
+  0: person
+  1: wheel_chair
+  2: not_wheelchair

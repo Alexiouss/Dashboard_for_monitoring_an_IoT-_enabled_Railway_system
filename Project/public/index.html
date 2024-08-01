@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Station</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            
+        <div class="counter-container">
+            <div class="header">
+                <h1><div class="indicator"></div>Live People Count</h1>
+            </div>
+            <p>Total Sensed People: <span id="totalSensedPeople" class="loading"></span></p>
+            <button id="refreshButton">Refresh</button>
+        </div>
+
+        <canvas id="peopleChart" width="300" height="300"></canvas>
+
+        <div class="button-container">
+            <button id="Predict_button">Predict</button>
+            <div class="spacer"></div>
+            <button id="Historic_button">Show Historic</button>
+            <div class="spacer"></div>
+            <button id="Clear_button">Clear</button>
+        </div>
+        <p>Wheelchair Detection System: <span id="wheel_chair">No people for detection nearby</span></p>
+        <button id="fetchAndSaveButton">End day</button>
+        <div id="responseContainer"></div>
+        </div>
+        <div class="column">
+            <div class="heating-container">
+                <p>Live Temprature: <span id='Live_temp'>Loading...</span></p>
+                <p>Live Humidity: <span id='Live_humidity'>Loading...</span></p>
+            </div>
+            <h1>Temperature Chart</h1>
+            <div style="width: 80%; margin: auto;">
+            <canvas id="temperatureChart"></canvas>
+            <div class="button-container_heating">
+                <button id="Predict_button_heating">Predict</button>
+                <div class="spacer"></div>
+                <button id="Historic_button_heating">Show Historic</button>
+                <div class="spacer"></div>
+                <button id="Clear_button_heating">Clear</button>
+            </div>
+            </div>
+            <div style="width: 80%; margin: auto;">
+                <canvas id="HumidityChart"></canvas>
+                <div class="button-container_humidity">
+                    <button id="Predict_button_humidity">Predict</button>
+                    <div class="spacer"></div>
+                    <button id="Historic_button_humidity">Show Historic</button>
+                    <div class="spacer"></div>
+                    <button id="Clear_button_humidity">Clear</button>
+                </div>
+            </div>
+            <div id="averageTemperature">Loading...</div>
+            <div id="averageHumidity">Loading...</div>
+        
+            <!-- Include your JavaScript file -->
+            
+        </div>
+    </div>
+    <!-- Include your script files -->
+    <script src="script.js"></script>
+    <script src="script_chart.js"></script> <!-- This script creates the chart -->
+    <script src="script_wheelchair.js"></script>
+    <script src="script_end_day.js"></script>
+    <script src="script_heating_chart.js"></script>
+    <script src="script_humidity_chart.js"></script>
+    <script src="script_heating_system.js"></script>
+</body>
+</html>
