@@ -13,12 +13,12 @@ This is a custom Dashboard of a railway employee for monitoring certain parts of
 * For the server to run you will a connection to a mongoDB database. To insert the historic data to the dataset you need to run the file DB_queries.py and update the jason file to insert and the collection to be inserted ,accordingly.
 * The historic data for the people in the stations are saved in the jason files 'year'.json
 After you create your database the database name should be 'Railway' and the collection names should be :
-1. People_counting_live
-2. People_in_the_station_historic
-3. Predictions_for_people
-4. Wheelchair_detection
-5. env_predictions
-6. environment_system
-7. environmental_data
+  1. People_counting_live
+  2. People_in_the_station_historic
+  3. Predictions_for_people
+  4. Wheelchair_detection
+  5. env_predictions
+  6. environment_system
+  7. environmental_data
 
 After creating the database you are good to go by running the server.js file.
